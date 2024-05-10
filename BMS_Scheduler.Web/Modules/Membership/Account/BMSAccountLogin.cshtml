@@ -1,0 +1,83 @@
+﻿@inject Serenity.ITextLocalizer Localizer
+@{
+    ViewData["Title"] = Texts.Forms.Membership.Login.LoginToYourAccount.ToString(Localizer);
+    ViewData["PageId"] = "Login";
+    Layout = MVC.Views.Shared._LayoutNoNavigation;
+}
+
+@section Head {
+<link href="~/Content/app_login.css" rel="stylesheet" />
+}
+<script id="Template_LoginPanel" type="text/template">
+    <div style="width: 100%; max-width: 400px;">
+        <div class="container-fluid" style="max-width: 1000px;">
+              <div class="boxdesign overflow-hidden">
+                  <div class="icondiv">
+                      <i class="fa fa-cubes" aria-hidden="true" style="padding-right:10px;"></i>
+                   </div>
+                   <div class="verticalline">
+                      <h3>B M S</h3>
+                  </div>
+                  <div class="bannertextdecoration">
+                      Broadcast Management System<br>A comprehensive software solution for TV channel
+                  </div>
+              </div>
+              <div class="shadow overflow-hidden">
+                  <div class="" style="padding: 50px">
+
+                      <form method="post" class="mt-2" autocomplete="off">
+                          <div class="form-group">
+                            <label for="username" class="d-block visually-hidden">User ID</label>
+                              <div class="input-with-icon">
+                                  <i class="fa fa-user input-icon" aria-hidden="true"></i>
+                                  <input type="text" class="form-control" id="Username" name="Username" placeholder="Username" required autofocus>
+                              </div>
+                          </div>
+                          <div class="form-group" style="padding-top:10px;">
+                                <label for="password" class="d-block visually-hidden">Password</label>
+                              <div class="input-with-icon">
+                                  <i class="fa fa-lock input-icon" aria-hidden="true"></i>
+                                  <input type="password" class="form-control" id="Password" name="Password" oninput="changeTypeInput(this)" placeholder="Password" required>
+                              </div>
+                          </div>
+                          <div class="form-group" style="padding-top:10px;">
+                           <button type="submit" id="~_LoginButton" class="btn btn-primary form-control">LOGIN</button>
+                            </div>
+                      </form>
+                      <div class="form-group" style="padding-top:5px;">
+                          <a href="#" style="text-decoration: none;"><i class="fa fa-unlock-alt mr-1" aria-hidden="true"></i>Forgot your Password?</a>
+                      </div>
+                  </div>
+              </div>
+              <div class="text-center mt-3" style="color: #ededed">
+                  <p>Designed &amp; Developed by: <a href="https://technovista.com.bd?ref=care" class="" style="color:black;text-decoration:none" target="_blank" rel="noopener"><span style="color:red;">Techno</span><span style="color:green";><b>V</b>ista</span> Limited</a></p>
+              <div>
+          </div>
+          </div>
+          </div>
+    </div>
+</script>
+
+
+@*<div class="page-content">*@
+<div id="LoginPanel" class="flex-main">
+</div>
+@*</div>*@
+
+<script type="text/javascript">
+    function changeTypeInput(inputElement) {
+        inputElement.type = "password";
+    }
+    jQuery(function () {
+        new BMS_Scheduler.Membership.LoginPanel($('#LoginPanel')).init();
+    @if (ViewData["Activated"] != null)
+    {
+        <text>
+                                     $(function() {
+                                                  $('#Username').val(@Html.Raw(Serenity.JSON.Stringify(ViewData["Activated"])));
+                                                  $('#Password').focus();
+                                            });
+        </text>
+    }
+    });
+</script>

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSGratuity" targetNamespace="http://tempuri.org/DSGratuity.xsd" xmlns:mstns="http://tempuri.org/DSGratuity.xsd" xmlns="http://tempuri.org/DSGratuity.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="4" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="DBConnectionString" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.DBConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+          <Connection ConnectionStringObject="Data Source=TVLLAP45;Initial Catalog=IOAS_CARE_DB;User ID=sa;Password=sa1234" IsAppSettingsProperty="false" Modifier="Assembly" Name="tvllap45.IOAS_CARE_DB.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection ConnectionStringObject="Data Source=TVLLAP20;Initial Catalog=IOAS_CARE_DB;Persist Security Info=True;User ID=sa;Password=sa1234" IsAppSettingsProperty="false" Modifier="Assembly" Name="tvllap20.IOAS_CARE_DB.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection ConnectionStringObject="Data Source=TVLLAP13\SQL2019;Initial Catalog=IOAS_CARE_DB;Persist Security Info=True;User ID=sa" IsAppSettingsProperty="false" Modifier="Assembly" Name="tvllap13\sql2019.IOAS_CARE_DB.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection ConnectionStringObject="Data Source=TVLLAP13\SQL2019;Initial Catalog=BMS_Scheduler;Persist Security Info=True;User ID=sa;Password=sa1234" IsAppSettingsProperty="false" Modifier="Assembly" Name="tvllap13\sql2019.BMS_Scheduler.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSGratuity" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="DSGratuity" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSGratuity">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ContentBank" msprop:Generator_RowEvHandlerName="ContentBankRowChangeEventHandler" msprop:Generator_RowDeletedName="ContentBankRowDeleted" msprop:Generator_RowDeletingName="ContentBankRowDeleting" msprop:Generator_RowEvArgName="ContentBankRowChangeEvent" msprop:Generator_TablePropName="ContentBank" msprop:Generator_RowChangedName="ContentBankRowChanged" msprop:Generator_UserTableName="ContentBank" msprop:Generator_RowChangingName="ContentBankRowChanging" msprop:Generator_RowClassName="ContentBankRow" msprop:Generator_TableClassName="ContentBankDataTable" msprop:Generator_TableVarName="tableContentBank">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_UserColumnName="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TvcName" msprop:Generator_ColumnPropNameInTable="TvcNameColumn" msprop:Generator_ColumnPropNameInRow="TvcName" msprop:Generator_UserColumnName="TvcName" msprop:Generator_ColumnVarNameInTable="columnTvcName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_UserColumnName="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TVCCode" msprop:Generator_ColumnPropNameInTable="TVCCodeColumn" msprop:Generator_ColumnPropNameInRow="TVCCode" msprop:Generator_UserColumnName="TVCCode" msprop:Generator_ColumnVarNameInTable="columnTVCCode" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Version" msprop:Generator_ColumnPropNameInTable="VersionColumn" msprop:Generator_ColumnPropNameInRow="Version" msprop:Generator_UserColumnName="Version" msprop:Generator_ColumnVarNameInTable="columnVersion" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="RoBooking" msprop:Generator_RowEvHandlerName="RoBookingRowChangeEventHandler" msprop:Generator_RowDeletedName="RoBookingRowDeleted" msprop:Generator_RowDeletingName="RoBookingRowDeleting" msprop:Generator_RowEvArgName="RoBookingRowChangeEvent" msprop:Generator_TablePropName="RoBooking" msprop:Generator_RowChangedName="RoBookingRowChanged" msprop:Generator_UserTableName="RoBooking" msprop:Generator_RowChangingName="RoBookingRowChanging" msprop:Generator_RowClassName="RoBookingRow" msprop:Generator_TableClassName="RoBookingDataTable" msprop:Generator_TableVarName="tableRoBooking">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="TvcName" msprop:Generator_ColumnPropNameInTable="TvcNameColumn" msprop:Generator_ColumnPropNameInRow="TvcName" msprop:Generator_UserColumnName="TvcName" msprop:Generator_ColumnVarNameInTable="columnTvcName" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_UserColumnName="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" type="xs:string" minOccurs="0" />
+              <xs:element name="ProgramBanner" msprop:Generator_ColumnPropNameInTable="ProgramBannerColumn" msprop:Generator_ColumnPropNameInRow="ProgramBanner" msprop:Generator_UserColumnName="ProgramBanner" msprop:Generator_ColumnVarNameInTable="columnProgramBanner" type="xs:string" minOccurs="0" />
+              <xs:element name="TimeSlotStartTime" msprop:Generator_ColumnPropNameInTable="TimeSlotStartTimeColumn" msprop:Generator_ColumnPropNameInRow="TimeSlotStartTime" msprop:Generator_UserColumnName="TimeSlotStartTime" msprop:Generator_ColumnVarNameInTable="columnTimeSlotStartTime" type="xs:int" minOccurs="0" />
+              <xs:element name="TimeSlotEndTime" msprop:Generator_ColumnPropNameInTable="TimeSlotEndTimeColumn" msprop:Generator_ColumnPropNameInRow="TimeSlotEndTime" msprop:Generator_UserColumnName="TimeSlotEndTime" msprop:Generator_ColumnVarNameInTable="columnTimeSlotEndTime" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" type="xs:string" minOccurs="0" />
+              <xs:element name="Duration" msprop:Generator_ColumnPropNameInTable="DurationColumn" msprop:Generator_ColumnPropNameInRow="Duration" msprop:Generator_UserColumnName="Duration" msprop:Generator_ColumnVarNameInTable="columnDuration" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalSpot" msprop:Generator_ColumnPropNameInTable="TotalSpotColumn" msprop:Generator_ColumnPropNameInRow="TotalSpot" msprop:Generator_UserColumnName="TotalSpot" msprop:Generator_ColumnVarNameInTable="columnTotalSpot" type="xs:int" minOccurs="0" />
+              <xs:element name="RoDate" msprop:Generator_ColumnPropNameInTable="RoDateColumn" msprop:Generator_ColumnPropNameInRow="RoDate" msprop:Generator_UserColumnName="RoDate" msprop:Generator_ColumnVarNameInTable="columnRoDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyName" msprop:Generator_UserColumnName="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="AgencyName" msprop:Generator_UserColumnName="AgencyName" msprop:Generator_ColumnPropNameInTable="AgencyNameColumn" msprop:Generator_ColumnPropNameInRow="AgencyName" msprop:Generator_ColumnVarNameInTable="columnAgencyName" type="xs:string" minOccurs="0" />
+              <xs:element name="RoNumber" msprop:Generator_UserColumnName="RoNumber" msprop:Generator_ColumnPropNameInTable="RoNumberColumn" msprop:Generator_ColumnPropNameInRow="RoNumber" msprop:Generator_ColumnVarNameInTable="columnRoNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="ROReceiveDate" msprop:Generator_UserColumnName="ROReceiveDate" msprop:Generator_ColumnPropNameInTable="ROReceiveDateColumn" msprop:Generator_ColumnPropNameInRow="ROReceiveDate" msprop:Generator_ColumnVarNameInTable="columnROReceiveDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="startTime" msprop:Generator_ColumnPropNameInRow="startTime" msprop:Generator_ColumnPropNameInTable="startTimeColumn" msprop:Generator_ColumnVarNameInTable="columnstartTime" msprop:Generator_UserColumnName="startTime" type="xs:string" minOccurs="0" />
+              <xs:element name="endTime" msprop:Generator_ColumnPropNameInRow="endTime" msprop:Generator_ColumnPropNameInTable="endTimeColumn" msprop:Generator_ColumnVarNameInTable="columnendTime" msprop:Generator_UserColumnName="endTime" type="xs:string" minOccurs="0" />
+              <xs:element name="TvcName" msprop:Generator_ColumnPropNameInTable="TvcNameColumn" msprop:Generator_ColumnPropNameInRow="TvcName" msprop:Generator_UserColumnName="TvcName" msprop:Generator_ColumnVarNameInTable="columnTvcName" type="xs:string" minOccurs="0" />
+              <xs:element name="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_UserColumnName="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" type="xs:string" minOccurs="0" />
+              <xs:element name="ProgramBanner" msprop:Generator_ColumnPropNameInTable="ProgramBannerColumn" msprop:Generator_ColumnPropNameInRow="ProgramBanner" msprop:Generator_UserColumnName="ProgramBanner" msprop:Generator_ColumnVarNameInTable="columnProgramBanner" type="xs:string" minOccurs="0" />
+              <xs:element name="TimeSlotStartTime" msprop:Generator_ColumnPropNameInTable="TimeSlotStartTimeColumn" msprop:Generator_ColumnPropNameInRow="TimeSlotStartTime" msprop:Generator_UserColumnName="TimeSlotStartTime" msprop:Generator_ColumnVarNameInTable="columnTimeSlotStartTime" type="xs:int" minOccurs="0" />
+              <xs:element name="TimeSlotEndTime" msprop:Generator_ColumnPropNameInTable="TimeSlotEndTimeColumn" msprop:Generator_ColumnPropNameInRow="TimeSlotEndTime" msprop:Generator_UserColumnName="TimeSlotEndTime" msprop:Generator_ColumnVarNameInTable="columnTimeSlotEndTime" type="xs:int" minOccurs="0" />
+              <xs:element name="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_UserColumnName="Name" msprop:Generator_ColumnVarNameInTable="columnName" type="xs:string" minOccurs="0" />
+              <xs:element name="Duration" msprop:Generator_ColumnPropNameInTable="DurationColumn" msprop:Generator_ColumnPropNameInRow="Duration" msprop:Generator_UserColumnName="Duration" msprop:Generator_ColumnVarNameInTable="columnDuration" type="xs:int" minOccurs="0" />
+              <xs:element name="TotalSpot" msprop:Generator_ColumnPropNameInTable="TotalSpotColumn" msprop:Generator_ColumnPropNameInRow="TotalSpot" msprop:Generator_UserColumnName="TotalSpot" msprop:Generator_ColumnVarNameInTable="columnTotalSpot" type="xs:int" minOccurs="0" />
+              <xs:element name="RoDate" msprop:Generator_ColumnPropNameInTable="RoDateColumn" msprop:Generator_ColumnPropNameInRow="RoDate" msprop:Generator_UserColumnName="RoDate" msprop:Generator_ColumnVarNameInTable="columnRoDate" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_UserColumnName="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="AgencyName" msprop:Generator_ColumnPropNameInTable="AgencyNameColumn" msprop:Generator_ColumnPropNameInRow="AgencyName" msprop:Generator_UserColumnName="AgencyName" msprop:Generator_ColumnVarNameInTable="columnAgencyName" type="xs:string" minOccurs="0" />
+              <xs:element name="RoNumber" msprop:Generator_ColumnPropNameInTable="RoNumberColumn" msprop:Generator_ColumnPropNameInRow="RoNumber" msprop:Generator_UserColumnName="RoNumber" msprop:Generator_ColumnVarNameInTable="columnRoNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="ROReceiveDate" msprop:Generator_ColumnPropNameInTable="ROReceiveDateColumn" msprop:Generator_ColumnPropNameInRow="ROReceiveDate" msprop:Generator_UserColumnName="ROReceiveDate" msprop:Generator_ColumnVarNameInTable="columnROReceiveDate" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="FPCTimeSlotSegmentInformationDetail" msprop:Generator_RowClassName="FPCTimeSlotSegmentInformationDetailRow" msprop:Generator_RowEvHandlerName="FPCTimeSlotSegmentInformationDetailRowChangeEventHandler" msprop:Generator_RowDeletedName="FPCTimeSlotSegmentInformationDetailRowDeleted" msprop:Generator_RowDeletingName="FPCTimeSlotSegmentInformationDetailRowDeleting" msprop:Generator_RowEvArgName="FPCTimeSlotSegmentInformationDetailRowChangeEvent" msprop:Generator_TablePropName="FPCTimeSlotSegmentInformationDetail" msprop:Generator_RowChangedName="FPCTimeSlotSegmentInformationDetailRowChanged" msprop:Generator_UserTableName="FPCTimeSlotSegmentInformationDetail" msprop:Generator_RowChangingName="FPCTimeSlotSegmentInformationDetailRowChanging" msprop:Generator_TableClassName="FPCTimeSlotSegmentInformationDetailDataTable" msprop:Generator_TableVarName="tableFPCTimeSlotSegmentInformationDetail">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Id" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_UserColumnName="Id" msprop:Generator_ColumnPropNameInTable="IdColumn" msprop:Generator_ColumnPropNameInRow="Id" msprop:Generator_ColumnVarNameInTable="columnId" type="xs:long" />
+              <xs:element name="FPCTimeSlotSegmentInformationId" msprop:Generator_UserColumnName="FPCTimeSlotSegmentInformationId" msprop:Generator_ColumnPropNameInTable="FPCTimeSlotSegmentInformationIdColumn" msprop:Generator_ColumnPropNameInRow="FPCTimeSlotSegmentInformationId" msprop:Generator_ColumnVarNameInTable="columnFPCTimeSlotSegmentInformationId" type="xs:long" />
+              <xs:element name="StartTime" msprop:Generator_UserColumnName="StartTime" msprop:Generator_ColumnPropNameInTable="StartTimeColumn" msprop:Generator_ColumnPropNameInRow="StartTime" msprop:Generator_ColumnVarNameInTable="columnStartTime" type="xs:int" />
+              <xs:element name="EndTime" msprop:Generator_UserColumnName="EndTime" msprop:Generator_ColumnPropNameInTable="EndTimeColumn" msprop:Generator_ColumnPropNameInRow="EndTime" msprop:Generator_ColumnVarNameInTable="columnEndTime" type="xs:int" />
+              <xs:element name="FPCDate" msprop:Generator_UserColumnName="FPCDate" msprop:Generator_ColumnPropNameInTable="FPCDateColumn" msprop:Generator_ColumnPropNameInRow="FPCDate" msprop:Generator_ColumnVarNameInTable="columnFPCDate" type="xs:dateTime" />
+              <xs:element name="ProgramBanner" msprop:Generator_UserColumnName="ProgramBanner" msprop:Generator_ColumnPropNameInTable="ProgramBannerColumn" msprop:Generator_ColumnPropNameInRow="ProgramBanner" msprop:Generator_ColumnVarNameInTable="columnProgramBanner">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CategoryId" msprop:Generator_UserColumnName="CategoryId" msprop:Generator_ColumnPropNameInTable="CategoryIdColumn" msprop:Generator_ColumnPropNameInRow="CategoryId" msprop:Generator_ColumnVarNameInTable="columnCategoryId" type="xs:int" />
+              <xs:element name="IsInnerProgramAllowed" msprop:Generator_UserColumnName="IsInnerProgramAllowed" msprop:Generator_ColumnPropNameInTable="IsInnerProgramAllowedColumn" msprop:Generator_ColumnPropNameInRow="IsInnerProgramAllowed" msprop:Generator_ColumnVarNameInTable="columnIsInnerProgramAllowed" type="xs:boolean" minOccurs="0" />
+              <xs:element name="SegmentNumber" msprop:Generator_UserColumnName="SegmentNumber" msprop:Generator_ColumnPropNameInTable="SegmentNumberColumn" msprop:Generator_ColumnPropNameInRow="SegmentNumber" msprop:Generator_ColumnVarNameInTable="columnSegmentNumber" type="xs:int" minOccurs="0" />
+              <xs:element name="ClientId" msprop:Generator_UserColumnName="ClientId" msprop:Generator_ColumnPropNameInTable="ClientIdColumn" msprop:Generator_ColumnPropNameInRow="ClientId" msprop:Generator_ColumnVarNameInTable="columnClientId" type="xs:int" minOccurs="0" />
+              <xs:element name="TimeSlotString" msprop:Generator_ColumnPropNameInRow="TimeSlotString" msprop:Generator_ColumnPropNameInTable="TimeSlotStringColumn" msprop:Generator_ColumnVarNameInTable="columnTimeSlotString" msprop:Generator_UserColumnName="TimeSlotString" type="xs:string" minOccurs="0" />
+              <xs:element name="CompanyName" msprop:Generator_ColumnPropNameInTable="CompanyNameColumn" msprop:Generator_ColumnPropNameInRow="CompanyName" msprop:Generator_UserColumnName="CompanyName" msprop:Generator_ColumnVarNameInTable="columnCompanyName" type="xs:string" minOccurs="0" />
+              <xs:element name="AgencyName" msprop:Generator_ColumnPropNameInTable="AgencyNameColumn" msprop:Generator_ColumnPropNameInRow="AgencyName" msprop:Generator_UserColumnName="AgencyName" msprop:Generator_ColumnVarNameInTable="columnAgencyName" type="xs:string" minOccurs="0" />
+              <xs:element name="RoNumber" msprop:Generator_ColumnPropNameInTable="RoNumberColumn" msprop:Generator_ColumnPropNameInRow="RoNumber" msprop:Generator_UserColumnName="RoNumber" msprop:Generator_ColumnVarNameInTable="columnRoNumber" type="xs:string" minOccurs="0" />
+              <xs:element name="ROReceiveDate" msprop:Generator_ColumnPropNameInTable="ROReceiveDateColumn" msprop:Generator_ColumnPropNameInRow="ROReceiveDate" msprop:Generator_UserColumnName="ROReceiveDate" msprop:Generator_ColumnVarNameInTable="columnROReceiveDate" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="startTime" msprop:Generator_UserColumnName="startTime" msprop:Generator_ColumnPropNameInTable="startTimeColumn" msprop:Generator_ColumnPropNameInRow="startTime" msprop:Generator_ColumnVarNameInTable="columnstartTime" type="xs:string" minOccurs="0" />
+              <xs:element name="endTime" msprop:Generator_UserColumnName="endTime" msprop:Generator_ColumnPropNameInTable="endTimeColumn" msprop:Generator_ColumnPropNameInRow="endTime" msprop:Generator_ColumnVarNameInTable="columnendTime" type="xs:string" minOccurs="0" />
+              <xs:element name="RoBookingDate" msprop:Generator_ColumnPropNameInRow="RoBookingDate" msprop:Generator_ColumnPropNameInTable="RoBookingDateColumn" msprop:Generator_ColumnVarNameInTable="columnRoBookingDate" msprop:Generator_UserColumnName="RoBookingDate" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:FPCTimeSlotSegmentInformationDetail" />
+      <xs:field xpath="mstns:Id" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

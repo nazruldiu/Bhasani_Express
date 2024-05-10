@@ -1,0 +1,53 @@
+{
+  "RootNamespace": "BMS_Scheduler",
+  "ServerTypings": {
+    "LocalTexts": true
+  },
+  "Restore": {
+    "Exclude": [
+      "/wwwroot/Scripts/serenity/Serenity.CoreLib*.*"
+    ]
+  },
+  "Connections": [
+    {
+      "Key": "Default",
+      "Tables": [
+        {
+          "Tablename": "dbo.CompanyInfo",
+          "Identifier": "CompanyInfo",
+          "Module": "BhasaniTask",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Country",
+          "Identifier": "Country",
+          "Module": "BhasaniTask",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.Shipping",
+          "Identifier": "Shipping",
+          "Module": "BhasaniTask",
+          "PermissionKey": "Administration:General"
+        },
+        {
+          "Tablename": "dbo.ShippingItems",
+          "Identifier": "ShippingItems",
+          "Module": "BhasaniTask",
+          "PermissionKey": "Administration:General"
+        }
+      ]
+    }
+  ],
+  "CustomTemplates": "F:\\Demo Projects\\TV\\bms_tvl-main\\BMS_Scheduler\\BMS_Scheduler.Web\\Modules\\_Ext\\CodeGeneratorTemplates",
+  "CustomGenerate": {
+    "EditorColumns": "{2}\\Editor\\{0}EditorColumns.cs",
+    "EditorForm": "{2}\\Editor\\{0}EditorForm.cs",
+    "GridEditor": "{2}\\Editor\\{0}GridEditor.ts",
+    "EditorDialog": "{2}\\Editor\\{0}EditorDialog.ts"
+  },
+  "UpgradeInfo": {
+    "InitialType": "Community",
+    "InitialVersion": "5.2.4.0"
+  }
+}

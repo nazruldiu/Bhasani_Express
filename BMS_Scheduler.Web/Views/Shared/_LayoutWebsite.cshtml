@@ -1,0 +1,183 @@
+﻿<!DOCTYPE html>
+@{
+    var themeCookie = Context.Request.Cookies["ProThemeSelection"];
+    var theme = themeCookie != null && !themeCookie.IsEmptyOrNull() ? themeCookie : "azure-light";
+    var rtl = System.Globalization.CultureInfo.CurrentUICulture.TextInfo.IsRightToLeft;
+}
+<style>
+    .nav-link {
+        font-weight: 500;
+    }
+
+    /*.login-btn{
+                border-radius: 15px !important;
+            }*/
+</style>
+<html lang="@System.Globalization.CultureInfo.CurrentUICulture.Name" class="pro theme-@(theme) no-navigation@(Html.Raw(rtl ? " dir=\"rtl\"" : ""))">
+<head>
+    @*<partial name="@MVC.Views.Shared._LayoutHead" />*@
+    @RenderSection("Head", false)
+    <title>@ViewData["Title"]</title>
+    @*<title>Depot &mdash;Website Template by Colorlib</title>*@
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/bhasaniweb/fonts/icomoon/style.css">
+    <link rel="stylesheet" href="~/bhasaniweb/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/bhasaniweb/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="~/bhasaniweb/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/bhasaniweb/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/bhasaniweb/fonts/flaticon/font/flaticon.css">
+    <link rel="stylesheet" href="~/bhasaniweb/css/aos.css">
+    
+    <!-- MAIN CSS -->
+    <link href="~/bhasaniweb/css/style.css" rel="stylesheet" />
+</head>
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="s-@(ViewData["PageId"])Page">
+    <div class="site-wrap" id="home-section">
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3">
+                    <span class="icon-close2 js-menu-toggle"></span>
+                </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+        <div class="top-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <a href="#" class=""><span class="mr-2  icon-envelope-open-o"></span> <span class="d-none d-md-inline-block">info@bhasanibd.com</span></a>
+                        <span class="mx-md-2 d-inline-block"></span>
+                        <a href="#" class=""><span class="mr-2  icon-phone"></span> <span class="d-none d-md-inline-block">+880 1714 998512</span></a>
+
+
+                        <div class="float-right">
+                            <a href="#" class=""><span class="mr-2  icon-twitter"></span> <span class="d-none d-md-inline-block">Twitter</span></a>
+                            <span class="mx-md-2 d-inline-block"></span>
+                            <a href="#" class=""><span class="mr-2  icon-facebook"></span> <span class="d-none d-md-inline-block">Facebook</span></a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
+
+            <div class="container">
+                <div class="row align-items-center position-relative">
+
+                    <div class="site-logo" style="width: 23% !IMPORTANT">
+                        @*<a href="index.html" class="text-black"><span class="text-primary">Depot</a>*@
+                        <img src="bhasaniweb/images/logo.jpeg" alt="Image" class="img-fluid">
+                    </div>
+
+                    <div class="col-12">
+                        <nav class="site-navigation text-right ml-auto " role="navigation">
+
+                            <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
+                                <li><a href="#home-section" class="nav-link">Home</a></li>
+                                <li><a href="#services-section" class="nav-link">Services</a></li>
+                                <li><a href="#team-section" class="nav-link">CEO's Message</a></li>
+                                <li>
+                                    <a href="#about-section" class="nav-link">About Us</a>
+                                </li>
+                                <li><a href="#why-us-section" class="nav-link">Why Us</a></li>
+                                <li><a href="#testimonials-section" class="nav-link">Testimonials</a></li>
+                                <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+                            </ul>
+                        </nav>
+
+                    </div>
+
+                    <div class="toggle-button d-inline-block d-lg-none"><a href="#" class="site-menu-toggle py-5 js-menu-toggle text-black"><span class="icon-menu h3"></span></a></div>
+
+                </div>
+            </div>
+
+        </header>
+
+        @RenderBody()
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-7">
+                                <h2 class="footer-heading mb-4">About Us</h2>
+                                <p>At BHASANI TRADING, we are more than just a trading company — we are your reliable partner in commerce and logistics.</p>
+                            </div>
+                            <div class="col-md-4 ml-auto">
+                                <h2 class="footer-heading mb-4">Features</h2>
+                                <ul class="list-unstyled">
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">Terms of Service</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ml-auto">
+                        <h2 class="footer-heading mb-4">Address:</h2>
+                        <p>House - 06 (2nd Floor), Road-09, Sector-01, Uttara, Dhaka-1230</p>
+                        <p>Minhaz Garden (2nd Floor), Agrabad C/A, Chittagong</p>
+                        @*<div class="mb-5">
+                        <h2 class="footer-heading mb-4">Subscribe to Newsletter</h2>
+                        <form action="#" method="post" class="footer-suscribe-form">
+                        <div class="input-group mb-3">
+                        <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                        <div class="input-group-append">
+                        <button class="btn btn-primary text-white" type="button" id="button-addon2">Subscribe</button>
+                        </div>
+                        </div>
+                        </div>
+
+
+                        <h2 class="footer-heading mb-4">Follow Us</h2>
+                        <a href="#about-section" class="smoothscroll pl-0 pr-3"><span class="icon-facebook"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-twitter"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-instagram"></span></a>
+                        <a href="#" class="pl-3 pr-3"><span class="icon-linkedin"></span></a>
+                        </form>*@
+
+                    </div>
+                </div>
+                <div class="row pt-5 mt-5 text-center">
+                    <div class="col-md-12">
+                        <div class="border-top pt-5">
+                            <p>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This website is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="#" target="_blank">01537-009219</a>
+                                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- Footer -->
+    </div>
+
+    <script src="~/bhasaniweb/js/jquery-3.3.1.min.js"></script>
+    <script src="~/bhasaniweb/js/popper.min.js"></script>
+    <script src="~/bhasaniweb/js/bootstrap.min.js"></script>
+    <script src="~/bhasaniweb/js/owl.carousel.min.js"></script>
+    <script src="~/bhasaniweb/js/jquery.sticky.js"></script>
+    <script src="~/bhasaniweb/js/jquery.waypoints.min.js"></script>
+    <script src="~/bhasaniweb/js/jquery.animateNumber.min.js"></script>
+    <script src="~/bhasaniweb/js/jquery.fancybox.min.js"></script>
+    <script src="~/bhasaniweb/js/jquery.easing.1.3.js"></script>
+    <script src="~/bhasaniweb/js/aos.js"></script>
+    <script src="~/bhasaniweb/js/main.js"></script>
+
+</body>
+</html>
