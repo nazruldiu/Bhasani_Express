@@ -153,7 +153,6 @@
   <ItemGroup>
     <Folder Include="Imports\ClientTypes\" />
     <Folder Include="Imports\ServerTypings\" />
-    <Folder Include="wwwroot\BhasaniWeb\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="wwwroot\Scripts\ckeditor\adapters\jquery.js" />
